@@ -7,7 +7,6 @@ Library             OpenShiftLibrary
 Resource            ../../../../Resources/Page/OCPDashboard/OCPDashboard.resource
 Resource            ../../../../Resources/OCP.resource
 Resource            ../../../../Resources/RHOSi.resource
-Resource            ../../../../tasks/Tasks/rhods_olm.robot
 
 Suite Setup         Suite Setup
 Suite Teardown      Suite Teardown
@@ -24,7 +23,7 @@ Detect Pre-existing Install Of Argo Workflows And Block RHOAI Install
     ...                     ${return_code}
     ...                     0
     ...                     msg=${output}
-    Can Uninstall RHODS Operator
+    uninstall.Uninstalling RHODS Operator
     Should Be Equal As Integers ${return_code}      0
     Open OperatorHub
     Install ODH Operator
