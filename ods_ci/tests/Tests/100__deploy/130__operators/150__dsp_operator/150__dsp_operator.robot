@@ -7,7 +7,7 @@ Library             OpenShiftLibrary
 Resource            ../../../../Resources/Page/OCPDashboard/OCPDashboard.resource
 Resource            ../../../../Resources/OCP.resource
 Resource            ../../../../Resources/RHOSi.resource
-Resource            ../../tasks/Resources/RHODS_OLM/uninstall/uninstall.robot
+Resource            ../../../../tasks/Tasks/rhods_olm.robot
 
 Suite Setup         Suite Setup
 Suite Teardown      Suite Teardown
