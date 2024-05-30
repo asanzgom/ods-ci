@@ -20,9 +20,7 @@ Detect Pre-existing Install Of Argo Workflows And Block RHOAI Install
     ${return_code}          ${output}               Run And Return Rc And Output
     ...                     pwd
     ${return_code}          ${output}               Run And Return Rc And Output
-    ...                     ls
-    ${return_code}          ${output}               Run And Return Rc And Output
-    ...                     tree ./
+    ...                     ls /home/jenkins/workspace/rhods/rhods-ci-pr-test/ods-ci/ods_ci/rhodsolm
     ${return_code}          ${output}               Run And Return Rc And Output
     ...                     oc apply -f ./ods_ci/tests/Resources/Files/argo/crd.workflows.yaml
     Should Be Equal As Integers
